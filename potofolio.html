@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Skill</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <div class="profile-pic">
+                <img src="gambar/profilku.jpeg" alt="Profil Saya">
+              </div>
+            <h1 style="font-size: 60px; font-family: 'Times New Roman', Times, serif;">Davin Risanta Yufa</h1>
+            <p>Saya adalah siswa <span>SMKN 12 MALANG</span></p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <div class="paragraf1">
+            <p>Hai, Saya adalah siswa SMK, saya mengambil jurusan Rekayasa Perangkat Lunak. Saya mulai belajar Rekayasa Perangkat Lunak sejak Tahun 2021</p>
+           </div>
+            <div class="paragraf2">
+                <p><span>Nama</span>: Davin Risanta Yufa</p>
+                <p><span>Tanggal Lahir</span>: 11 Desember 2005 </p>
+                <p><span>Umur</span>: 17 Tahun </p>
+                <p><span>No Hp</span>: +6288805305557 </p>
+                <p><span>Email</span>: davinarekska@gmail.com</p>
+                <p><span>Alamat</span>: Jl.Bakti rt.04 rw.07 no.118 Balearjosari Blimbing Malang</p>
+               
+                
+            </div>
+            <div class="clear"></div>
+
+            <button class="btndownload"><a href="mycv/cv_davin.pdf" download>Download CV</a></button>
+        </div>
+        
+
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skill">
+      <div class="skill-title">HTML</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 85%;"></div>
+      </div>
+    </div>
+    
+    <div class="skill">
+      <div class="skill-title">CSS</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 83%;"></div>
+      </div>
+    </div>
+    
+    <div class="skill">
+      <div class="skill-title">Java</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 75%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-title">MySQL</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 80%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">PHP</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 72%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">Laravel</div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 77%;"></div>
+        </div>
+      </div>
+
+  </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak Saya</h2>
+            <form action="submit.php" method="POST">
+                <input type="text" name="name" placeholder="Nama" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Pesan" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Designed by Davin.</p>
+        <button>
+            <a href="https://www.youtube.com/channel/UCbH5BjRIre2c3NI5IEXv4BQ"></a>
+            <img src="gambar/youtube.jpeg" alt="YouTube" width="20" height="20">
+          </button>
+    </footer>
+</body>
+
+</html>
