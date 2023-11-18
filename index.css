@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@800&family=Marcellus&family=Poltawski+Nowy&family=Roboto:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: #222;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 9px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+ul{
+    display: flex;
+    margin-right: 120px;
+
+}
+
+li {
+    list-style-type: none;
+    padding: 7px;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    padding: 12px;
+    position: relative;
+}
+
+li a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s;
+}
+
+li a:hover::before{
+   width: 100%;
+}
+
+
+li a:hover{
+    color: crimson;
+}
+
+li a:active{
+    color: greenyellow !important;
+}
+
+
+.logho{
+    margin-left: 50px;
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+    margin-right: 0;
+}
+
+.logho-hias{
+    font-weight: 700;
+    color: crimson;
+    font-size: 40px;
+    margin: 0;
+}
+
+.container{
+    background-image: url(bg-aestethic.jpg);
+    width: 100%;
+    height: 120vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    
+
+}
+
+.container-navbar{
+    width: 100%;
+    height: 70px;
+
+
+}
+
+.container-dalam{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 120vh;
+    box-sizing: border-box;
+    padding: 30px;
+    justify-content: baseline;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.judul{
+    font-size: 50px;
+    color: gold;
+    font-family: 'Crimson Pro', serif;
+    font-family: 'Marcellus', serif;
+    font-family: 'Poltawski Nowy', serif;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+
+.container-hero{
+    width: 300px;
+    height: 250px;
+    background-image: url(palanggu.jpeg);
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: crimson 4px solid;
+    display: flex;
+    margin-top: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+
+
+.profil{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 50px;
+
+}
+
+.profil1{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+}
+
+.profil2{
+width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: block;
+    justify-items: center;
+    align-items: baseline;
+    
+}
+
+.judul2{
+    font-size: 40px;
+    color: white;
+    font-family: 'Crimson Pro', serif;
+    font-family: 'Marcellus', serif;
+    font-family: 'Poltawski Nowy', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg-aestethic2.jpg);
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.tombol{
+    width: 200px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: black;
+   
+    border: crimson 2px solid;
+    transition: all 1s ease;
+    
+}
+
+.tombol{
+    color: white;
+    text-decoration: none;
+}
+
+.tombol:hover{
+    
+    width: 260px;
+    color: crimson}
+
+
+    .animated-element {
+        opacity: 0;
+        transform: translateX(100%); /* Awalnya, elemen tersembunyi di luar layar sebelah kanan */
+        transition: transform 0.5s, opacity 0.5s; /* Animasi selama 0.5 detik */
+    }
+    
+    .animated-element.active {
+        opacity: 1;
+        transform: translateX(0); /* Muncul dari kanan ke kiri */
+    }
+
+    .container2{
+        box-sizing: border-box;
+        padding-left: 50px;
+        padding-top: 90px;
+
+    }
+    
+    
+
+
+
+
+
+@media (max-width: 768px){
+
+    nav{
+        display: flex;
+        width: 100%;
+        height: 70px;
+        background-color: #222;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 9px;
+        align-items: center;
+        position: fixed;
+    }
+    
+    ul{
+        display: flex;
+        margin-right: 120px;
+    
+    }
+    
+    li {
+        list-style-type: none;
+        padding: 7px;
+    }
+    
+    li a{
+        color: white;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        padding: 12px;
+        position: relative;
+    }
+    
+    li a::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        transition: width 0.3s;
+    }
+    
+    li a:hover::before{
+       width: 100%;
+    }
+    
+    
+    li a:hover{
+        color: crimson;
+    }
+    
+    li a:active{
+        color: greenyellow !important;
+    }
+    
+    
+    .logho{
+        margin-left: 50px;
+        font-weight: 700;
+        color: white;
+        font-size: 40px;
+        margin-right: 0;
+    }
+    
+    .logho-hias{
+        font-weight: 700;
+        color: crimson;
+        font-size: 40px;
+        margin: 0;
+    }
+    
+    .container{
+        background-image: url(bg-aestethic.jpg);
+        width: 100%;
+        height: 200vh;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        
+    
+    }
+    
+    .container-navbar{
+        width: 100%;
+        height: 70px;
+    
+    
+    }
+    
+    .container-dalam{
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 200vh;
+        box-sizing: border-box;
+        padding: 30px;
+        justify-content: baseline;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .judul{
+        font-size: 40px;
+        color: gold;
+        font-family: 'Crimson Pro', serif;
+        font-family: 'Marcellus', serif;
+        font-family: 'Poltawski Nowy', serif;
+        font-family: 'Roboto', sans-serif;
+        justify-content: center;
+    }
+    
+    .container-hero{
+        width: 75%;
+        height: 50%;
+        background-image: url(palanggu.jpeg);
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: crimson 4px solid;
+        display: flex;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    
+    }
+    
+    
+    .profil{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        box-sizing: border-box;
+        margin-top: 50px;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    
+    .profil1{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    
+    }
+    
+    .profil2{
+    width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: block;
+        justify-items: center;
+        align-items: baseline;
+        margin-top: -160px;
+        
+    }
+    
+    .judul2{
+        font-size: 20px;
+        color: white;
+        font-family: 'Crimson Pro', serif;
+        font-family: 'Marcellus', serif;
+        font-family: 'Poltawski Nowy', serif;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .container2{
+        width: 100%;
+        height: 100vh;
+        background-image: url(bg-aestethic2.jpg);
+        box-sizing: border-box;
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+    .tombol{
+        width: 200px;
+        padding: 10px;
+        margin-top: 30px;
+        background-color: black;
+       
+        border: crimson 2px solid;
+        transition: all 0.5s ease;
+        
+    }
+    
+    .tombol{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .tombol:hover{
+        
+        width: 260px;
+        color: crimson}
+}
+
+
+
+
